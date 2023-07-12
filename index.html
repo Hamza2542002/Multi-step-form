@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/all.min.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="parent">
+  <aside>
+   <ul>
+    <li>
+     <span>1</span>
+     <div class="text">
+      <p>STEP 1</p>
+      <h3>YOUR INFO</h3>
+     </div>
+    </li>
+    <li>
+     <span>2</span>
+     <div class="text">
+      <p>STEP 2</p>
+      <h3>SELECT PLANE</h3>
+     </div>
+    </li>
+    <li>
+     <span>3</span>
+     <div class="text">
+      <p>STEP 3</p>
+      <h3>ADD-ONS</h3>
+     </div>
+    </li>
+    <li>
+     <span>4</span>
+     <div class="text">
+      <p>STEP 4</p>
+      <h3>SUMMARY</h3>
+     </div>
+    </li>
+   </ul>
+  </aside>
+  <div class="content">
+   <form action="" method="get" class="form">
+    <div class="container first-s">
+     <div class="head">
+      <h1>Personal info</h1>
+      <p>Please Provide your name, email address, and phone number.</p>
+     </div>
+     <div class="name f-child">
+      <label for="name">Name <span>This field is required</span></label>
+      <input class="special" type="text" id="name" autocomplete="on" required placeholder="e.g Stephan King">
+     </div>
+     <div class="e-a f-child">
+      <label for="email">Email Address <span>This field is required</span></label>
+      <input class="special"  type="email" id="email" autocomplete="on" required placeholder="e.g stephanking@lorem.com">
+     </div>
+     <div class="p-n f-child">
+      <label for="phone">Phone Number <span>This field is required</span></label>
+      <input class="special"  type="text" id="phone" autocomplete="on" required placeholder="e.g +1 234 567 890" pattern="\+\d\s\d{3}\s\d{3}\s\d{3}">
+     </div>
+     <div class="f-child buttons">
+      <button class="next" id="1">Next</button>
+     </div>
+    </div>
+    <!-- end of first step -->
+    <!-- Strat of second step -->
+    <div class="container second-s">
+     <div class="head">
+      <h1>Select your plane</h1>
+      <p>You have the option of monthly or yearly billing.</p>
+     </div>
+      <div class="f-child">
+       <div class="check">
+        <input type="radio" name="plane" id="a-p" value="Arcade" price="9">
+        <span></span>
+        <label for="a-p">
+         <div>
+          <img src="images/icon-arcade.svg" alt="">
+          <div class="price">
+           <h4>Arcade</h4>
+           <p class="month">$9/mo</p>
+           <p class="year">$90/yr</p>
+           <p class="year offer">2 months free</p>
+          </div>
+         </div>
+        </label>
+       </div>
+       <div class="check">
+        <input type="radio" name="plane" id="ad-p" value="Advanced" price="12">
+        <span></span>
+        <label for="ad-p">
+         <div>
+          <img src="images/icon-advanced.svg" alt="">
+          <div class="price">
+           <h4>Advanced</h4>
+           <p class="month">$12/mo</p>
+           <p class="year">$120/yr</p>
+           <p class="year offer">2 months free</p>
+          </div>
+         </div>
+        </label>
+       </div>
+       <div class="check">
+        <input type="radio" name="plane" id="pro-p" value="Pro" price="15">
+        <span></span>
+        <label for="pro-p">
+         <div>
+          <img src="images/icon-pro.svg" alt="">
+          <div class="price">
+           <h4>Pro</h4>
+           <p class="month">$15/mo</p>
+           <p class="year">$150/mo</p>
+           <p class="year offer">2 months free</p>
+          </div>
+         </div>
+        </label>
+       </div>
+      </div>
+      <div class="f-child switch-d">
+       <span>Monthly</span>
+       <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+       </label>
+       <span>Yearly</span>
+      </div>
+      <div class="f-child buttons">
+       <button type="back">GO Back</button>
+       <button class="next" id ="2">Next Step</button>
+      </div>
+    </div>
+    <div class="container third-s">
+     <div class="head">
+      <h1>Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p>
+     </div>
+      <div class="f-child">
+       <div class="check">
+        <input type="checkbox" name="online-service" id="o-s" value="1">
+        <span></span>
+        <label for="o-s" value="1" type="mo">
+         <i class="fa-solid fa-square-check"></i>
+         <div class="det">
+          <h3>online service</h3>
+          <p>Access to multiplyer games</p>
+         </div>
+        </label>
+       </div>
+      </div>
+      <div class="f-child">
+       <div class="check">
+        <input type="checkbox" name="Large storage" id="l-s" value="2">
+        <span></span>
+        <label for="l-s" value="2" type="mo">
+         <i class="fa-solid fa-square-check"></i>
+         <div class="det">
+          <h3>Large storage</h3>
+          <p>Extra 1TB of cloud save</p>
+         </div>
+        </label>
+       </div>
+      </div>
+      <div class="f-child">
+       <div class="check">
+        <input type="checkbox" name="Customise Profile" id="c-p" value="2">
+        <span></span>
+        <label for="c-p" value="2" type="mo">
+         <i class="fa-solid fa-square-check"></i>
+         <div class="det">
+          <h3>Customise Profile</h3>
+          <p>Customise theme on your profile</p>
+         </div>
+        </label>
+       </div>
+      </div>
+      <div class="f-child buttons">
+       <button type="back">GO Back</button>
+       <button class="next" id="3">Next Step</button>
+      </div>
+    </div>
+    <!-- end of third step -->
+    <!-- Strat of forth step -->
+    <div class="container forth-s">
+     <div class="head">
+      <h1>Finishing Up</h1>
+      <p>Double-check everthing looks OK before confirming.</p>
+     </div>
+      <div class="info">
+       <header value="0" type = "mo">
+        <h3 class="month">Arcade(Monthly)</h3>
+        <h3 class="year">Arcade(Yearly)</h3>
+        <a href="">Change</a>
+       </header>
+       <ul>
+        <li  value="1" type="mo">Online Service</li> 
+        <li  value="2" type="mo">Large Storage</li> 
+        <li  value="2" type="mo">Customise Profile</li>
+        <li  value="10" type="yr">Online Service</li>
+        <li  value="20" type="yr">Large Storage</li>
+        <li  value="20" type="yr">Customise Profile</li>
+       </ul>
+      </div>
+      <footer value="0" type="mo">
+       Total(Per month)
+      </footer>
+      <div class="f-child buttons">
+       <button type="back">GO Back</button>
+       <button type="submit">Confirm</button>
+      </div>
+    </div>
+   <form>
+  </div>
+ </div>
+ <script src="js/script.js"></script>
+</body>
+</html>
